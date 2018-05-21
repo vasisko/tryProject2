@@ -1,0 +1,54 @@
+<h2>Member Dashboard</h2>
+
+{{#if errors}} {{#each errors}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/each}} {{/if}}
+
+<!--  MEMBER LIST  -->
+<form id="dashboardListAll">
+    <div class="form-group">
+        <button type="submit" class="btn btn-warning">Member Listing</button>
+    </div>
+</form>
+
+<!--  MEMBER ADD SERVICES  -->
+    <div class="form-group">
+        <a href="memberAddServ.handlebars"><button type="submit" class="btn btn-warning">Register Services</button></a>
+    </div>
+<!--  NEEDS LIST  -->
+    <div class="form-group">
+        <a href="memberAddServ.handlebars"><button type="submit" class="btn btn-warning">Needs Listing</button></a>
+    </div>
+
+<!-- List of Resources goes below form  -->
+    <div id="memberList">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="resources-container">
+                <h4>Resources</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Member</th>
+                            
+                            <th>Website</th>
+                            <th>Email</th>
+                            
+                            <!--<th>Delete Item</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                     
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Script for dynamically filling list of resources -->
+    <script src="/js/dashboard.js" type="text/javascript"></script>

@@ -1,0 +1,22 @@
+
+<h1>W.I.N Houston</h1>
+
+<h2>Organizations!</h2>
+
+<ul>
+  {{#each wins}}
+    {{#unless user}}
+      {{> wins/resourseForm user=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Users!</h2>
+
+<ul>
+  {{#each wins}}
+    {{#if user}}
+      {{> wins/userForm user=false}}
+    {{/if}}
+  {{/each}}
+</ul>

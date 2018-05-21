@@ -1,0 +1,134 @@
+<h2>Member Dashboard</h2>
+
+{{#if errors}} {{#each errors}}
+<div class="alert alert-danger">{{msg}}</div>
+{{/each}} {{/if}}
+
+<!--  MEMBER LIST  -->
+<form id="dashboardListAll">
+    <div class="form-group">
+        <button type="submit" class="btn btn-warning">Member Listing</button>
+    </div>
+</form>
+
+<!-- REGISTER MEMBER SERVICES -->
+    
+    <div id="resourceForm">
+       <form id="memberAddServices">
+        <h2>Register Your Services</h2>
+        <div>
+        <label class="custom-control-label" for="username">UserName</label>
+        <input type="text" id="username" name="name">
+        </div>
+
+        <h2>Your Service Area </h2>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="checkNE" value="NW" name="location">
+            <label class="custom-control-label" for="checkNW">NorthWest</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="checkNE" value="NE" name="location">
+            <label class="custom-control-label" for="checkNE">NorthEast</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="checkSW" value="SW" name="location">
+            <label class="custom-control-label" for="checkSW">SouthWest</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="checkSE" value="SE" name="location">
+            <label class="custom-control-label" for="checkSE">SouthEast</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="checkCN" value="CT" name="location">
+            <label class="custom-control-label" for="checkCN">Central</label>
+        </div>
+        <br>
+        <div>
+        <label class="custom-control-label" for="address">Address</label>
+        <input type="text" id="address">
+        </div>
+
+        <h2>List of services offered</h2>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Housing</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Clothing</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Babysitting</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Infant Items/food</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Daycare</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">School suplies/Education assistance</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Employment</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Counselling</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Immigration assistance</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Doctor's visit</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Legal assistance</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Drug addiction</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Furniture</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Domestic Violence</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Bus passes</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Internet/phone access</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Auto repair</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1" value="food">
+            <label class="custom-control-label" for="customCheck1">Food/SNAP</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Medicine</label>
+        </div>
+        <br>
+    
+    </form>
+
+
+    <!-- Script for dynamically filling list of resources -->
+    <script src="/js/dashboard.js" type="text/javascript"></script>
