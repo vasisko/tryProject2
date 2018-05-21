@@ -1,0 +1,43 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "authentication system",
+  "main": "server.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.3",
+    "express-favicon": "^2.0.1",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.2.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.3",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "process-nextick-args": "^2.0.0",
+    "readable-stream": "^2.3.6",
+    "safe-buffer": "^5.1.2",
+    "sequelize": "^4.37.7",
+    "sqlstring": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sbedner/Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sbedner/Project2/issues"
+  },
+  "homepage": "https://github.com/Sbedner/Project2#readme"
+}
